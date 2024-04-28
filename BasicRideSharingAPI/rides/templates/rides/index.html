@@ -1,0 +1,20 @@
+<!-- rides/templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rides App</title>
+</head>
+<body>
+    <h1>Rides App</h1>
+    <p>Welcome to the Rides App!</p>
+    <ul>
+        <li><a href="{% url 'ride_create' %}">Create new Ride</a></li>
+        <li><a href="{% url 'ride_list' %}">View Ride Details</a></li>
+        <li><a href="{% url 'ride_list_all' %}">View All Ride Details</a></li>
+        <li><a href="{% url 'update_ride_status' %}">Update Ride Status</a></li>
+    </ul>
+</body>
+</html>
